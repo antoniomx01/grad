@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 Muchas Felicidades Graduada 🎉</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            display: none;
+            background-color: #fff;
+            padding: 40px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            max-width: 900px;
+            text-align: left;
+        }
+        h1 {
+            color: #B22222;
+            margin-top: 50px;
+            font-size: 3em;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: #B22222;
+            color: white;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+        p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-style: italic;
+            color: #777;
+            font-size: 16px;
+        }
+        h2 {
+            color: #8B0000;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #dogPic {
+            display: none;
+            margin-top: 30px;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎓 Muchas Felicidades Graduada 🎉</h1>
+
+    <button onclick="mostrarCarta()">Abrir carta</button>
+
+    <div class="container" id="carta">
+        <p>La verdad quería esperarme hasta el día de tu graduación para ahora sí escribirte algo jeje. Hoy es un día bien bonito porque termina una etapa súper importante en tu vida, pero al mismo tiempo empieza otra que va a estar llena de nuevas experiencias, aprendizajes y retos diferentes.</p>
+
+        <p>Felicidades por haber aguantado tantos semestres, por cada desvelo, por los exámenes, las prácticas, los trabajos, y por haber mantenido ese promedio que hoy te lleva al hospital que quisiste.</p>
+
+        <p>Felicidades también por toda la gente que conociste, por las amistades que hiciste, por las personas que hoy te quieren y te valoran, y que espero sigan a tu lado muchos años más.</p>
+
+        <p>La verdad es que solo tú sabes lo que costó llegar hasta aquí. Los días donde sentías que no podías más, los momentos de estrés, de dudas. Y aunque a veces parecía que el camino nunca se iba a acabar, aquí estás. Todo eso que viviste te trajo hasta este día, y por eso tiene aún más valor.</p>
+
+        <p>Ahora empieza una nueva etapa. Y aunque va a ser muy diferente, sé que te va a encantar. Vas a seguir aprendiendo muchísimo, y cada día vas a crecer un poco más como persona y como médico. Igual que en la carrera, vas a dar lo mejor de ti, como siempre lo haces.</p>
+
+        <p>Por lo que te conozco, sé que vas a ser una gran MIP. Sabes mucho, y por eso debes de confiar siempre en ti. Acuérdate siempre de cuidar a los pacientes, pero también de cuidar tus límites, de no tomarte las cosas personales (aunque sé que a veces cuesta), de rodearte de personas en las que realmente puedas confiar y apoyarte cuando lo necesites. Te vas a topar con todo tipo de personas, pero siempre habrá alguien que te ayude a seguir.</p>
+
+        <p>Llévate bien con las enfermeras (invítales su coquita si te nace jaja), con tu R1 (que a veces va igual o peor que uno), tenles paciencia, apóyalos, porque también te van a enseñar mucho y te van a echar la mano cuando lo necesites. También te recomendaría que te llevaras muy bien con tus comips, pero a veces simplemente son cosas que no siempre dependen de ti. Y no olvides algo muy importante: aprende, disfruta, pero también descansa. No todo es estar al 100% todo el tiempo.</p>
+
+        <p>Este es solo el primer gran logro de muchos que vas a tener. Sé que lo que viene no siempre será fácil, pero confío completamente en ti, en lo que sabes, en lo capaz que eres, en el corazón tan grande que tienes para esta carrera. Te admiro muchísimo.</p>
+
+        <p>Hoy celébrate. Recuerda todo lo que hiciste para llegar aquí. Y cuando en el futuro tengas días difíciles, vuelve a este momento y acuérdate que esto no fue suerte: fue tu esfuerzo, tus ganas y tu constancia.</p>
+
+        <h2>🎉 Felicidades Dra. Marrufo 🎉</h2>
+        <p style="text-align: center;"><em>Ojalá nunca me toque caer contigo en urgencias y si es así, que no me duermas el brazo al sacarme la gaso</em></p>
+
+        <button onclick="mostrarPerro()">Una graduada más quiere felicitarte, porque ella sí sabe de la vida 🐶</button>
+
+        <div>
+            <img id="dogPic" src="https://i.imgur.com/Hg8xhgS.jpeg" alt="Perrita graduada">
+        </div>
+
+    </div>
+
+    <!-- Confetti library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <script>
+        function mostrarCarta() {
+            document.getElementById('carta').style.display = 'block';
+            confetti({
+                particleCount: 200,
+                spread: 160
+            });
+        }
+
+        function mostrarPerro() {
+            const img = document.getElementById('dogPic');
+            img.style.display = 'block';
+            img.style.transform = 'scale(1.1)';
+        }
+    </script>
+
+</body>
+</html>
